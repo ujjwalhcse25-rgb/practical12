@@ -2,11 +2,46 @@
     <head>
         <title>Practical 12</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        
+        .nav-link{
+            background-color:blue;
+            color:white;
+            
+        }
+        a{
+            background-color:BLUE;
+            color:white;
+        }
+        
+        section{
+            margin-top: 15px;
+        }
+        
+        .prod{
+            margin-top: 25px;
+            margin-bottom: 10px;
+            background-color:rgb(167, 94, 235)
+            
+        }
+        footer{
+            background-color:black;
+            color:white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .foot{
+            color:goldenrod;
+        }
+    </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: blue;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Flipzon</a>
+    <div class="nav-link" style="color: white; font-weight: bold;">Flipzon</div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,7 +50,7 @@
         <a class="nav-link active" aria-current="page" href="#home">Home</a>
         <a class="nav-link" href="#products">Products</a>
         <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#contacts">Contact</a>
       </div>
     </div>
   </div>
@@ -35,7 +70,7 @@
   </div>
 </div>
 </section>
-    <h2>Products</h2>
+    <h2 class="prod">Products</h2>
 <section id="products">
 <div class="container">
   <div class="row">
@@ -51,8 +86,6 @@
         </div>
       </div>
     </div>
-    
-    <!-- Mobile Product -->
     <div class="col-md-4 mb-4">
       <div class="card">
         <img src="mobile.png" class="card-img-top" alt="mobile">
@@ -64,8 +97,6 @@
         </div>
       </div>
     </div>
-    
-    <!-- Tablet Product -->
     <div class="col-md-4 mb-4">
       <div class="card">
         <img src="tablet.jpeg" class="card-img-top" alt="tablet">
@@ -80,6 +111,20 @@
   </div>
 </div>
 </section>
+<footer>
+<section id="about">
+    <h2 class="foot">About Us</h2>
+    <p>Flipzon is a leading e-commerce platform that offers a wide range of products at competitive prices. We are committed to providing our customers with the best shopping experience possible.</p>
+</section>
+<section id="contacts">
+    <h2 class="foot">Contact Us</h2>
+    <p>If you have any questions or need assistance, please feel free to contact us:</p>
+    <ul>
+        <li>Email:filpzon@gmail.com</li>
+        <li>Phone:1234567890</li>
+    </ul>
+</section>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
